@@ -50,7 +50,7 @@ class TestMostWords(unittest.TestCase):
         self.str9 = 'your punctuation is incorrect'
 
     def test_most_words_no_args(self):
-        self.assertEqual(grade.most_words(), None)
+        self.assertIsNone(grade.most_words())
 
     def test_most_words_one_arg(self):
         self.assertEqual(grade.most_words('hello'), 'hello')
