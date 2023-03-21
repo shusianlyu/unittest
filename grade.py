@@ -12,7 +12,7 @@ def final_grade(student_grades, extra_credit=1):
     :param extra_credit: (int) amount of extra credit to add
     :return: (dict) where keys are students and values are updated grades
     """
-    return {student: grade for student, grade in student_grades}
+    return {student: grade + extra_credit for student, grade in student_grades}
 
 
 def most_words(*args):
