@@ -16,7 +16,6 @@ class TestFinalGrade(unittest.TestCase):
         """Create dictionaries for testing"""
         self.default_dict = {'Lisa': 85, 'Tom': 90, 'Alex': 70}
         self.empty_dict = {}
-        self.non_empty_dict = {15: 'Adam', (1, 2): 124, 'Will': 'Charlie'}
 
     def test_final_grade_default(self):
         new_grades = grade.final_grade(self.default_dict)
