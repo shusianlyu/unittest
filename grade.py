@@ -23,6 +23,5 @@ def most_words(*args):
     :param args: arbitrary amount of strings
     :return: (string) string with highest number of words
     """
-    if args:
-        return max(args, key=lambda x: len(x.split()))
+    return max(args, key=lambda x: len(x.split())) if args else None
 
